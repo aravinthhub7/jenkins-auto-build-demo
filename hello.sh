@@ -1,2 +1,4 @@
-#!/bin/bash
-echo "Hello from Jenkins Auto Build on $(date)" > output.txt
+echo "New build on $(date)" >> hello.sh
+git add hello.sh
+git commit -m "Trigger build"
+git push
